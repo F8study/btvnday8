@@ -1,0 +1,138 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    outline: none;
+}
+
+@font-face {
+    font-family: "Manrope";
+    src: url(./Manrope-Regular.tff);
+}
+
+html {
+    font-family: "Manrope";
+}
+
+body {
+    background-color: rgb(255, 255, 255);
+}
+
+#header {
+    margin: 0 50px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.header-img img {
+    width: 180px;
+    height: auto;
+    cursor: pointer;
+}
+
+.header-nav {
+    display: flex;
+    align-items: center;
+}
+
+.nav-heading {
+    display: flex;
+    margin-right: -20px;
+}
+
+.nav-heading > li {
+   list-style-type: none;
+    margin-right: 40px;
+    font-size: 15px;
+    font-weight: 900;
+    cursor: pointer;
+    padding: 30px 0;
+}
+
+.nav-heading > li i {
+        font-size: 10px;
+    margin-left: 5px;
+}
+ 
+.nav-icon i {
+    font-size: 20px;
+    margin-left: 10px;
+    padding: 10px;
+    cursor: pointer;
+}
+
+.nav-heading > li:hover {
+    opacity: 0.8;
+}
+
+.main-nav {
+    position: relative;
+   
+}
+
+.mega-menu {
+    position: absolute;
+    left: -1200px;
+    margin: 65px 50px;
+    display: flex;
+    padding: 30px;
+    background: white;
+    top: 15px;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    border-radius: 4px;
+    visibility: hidden;
+    cursor: auto;
+}
+
+.main-nav:hover .mega-menu {
+    visibility:inherit
+}
+
+.menu-flex {
+    display: flex;
+}
+
+.mega-menu1 {
+    margin-right: 100px;
+    position: relative;
+}
+
+.mega-menu1::before {
+    content: "";
+    width: 2px;
+    height: 335px;
+    position: absolute;
+    background-color: rgb(241,243,246);
+    top: 0px;
+    right: 30px;
+}
+
+.main-nav li {
+    list-style-type: none;
+    margin: 10px 0;
+    width: 50px;
+}
+
+.menu-flex1 {
+        margin: 15px 0;
+}
+
+.menu-flex2 {
+    margin: 15px 130px;
+}
+
+.menu-elements {
+    margin-top: 16px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.menu-elements__flex {
+    margin-right: 200px;
+}
+
+.mega-menu li:hover {
+    cursor: pointer;
+    color: black;
+}

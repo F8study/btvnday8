@@ -1,0 +1,186 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    outline: none;
+}
+@font-face {
+    font-family: "nunito";
+    src: url(../font/Nunito-Regular.ttf);
+}
+html{
+    font-family: "nunito";
+}
+
+#bill{
+    width: 400px;
+    float: right;
+   
+}
+.title {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px 18px 20px 20px;
+    background-color: rgb(244,244,244);
+}
+
+.title p{
+    font-size: 18px;
+    font-weight: 700;
+    position: relative;
+}
+.title p::after{
+    content: "4";
+    position: absolute;
+    padding: 1px 6px;
+    background-color: rgb(64,96,242);
+    color: white;
+    border-radius: 50%;
+    font-size: 12px;
+    top: -4px;
+    right: -20px;
+    cursor: pointer;
+}
+
+.title i{
+    font-size: 23px;
+    color: rgb(236,91,45);
+    cursor: pointer;
+}
+
+
+.product{
+    position: relative;
+    display: flex;
+    align-items: center;
+    margin: 36px 28px 28px 28px;
+}
+.product::after{
+    position: absolute;
+    content: "x";
+    font-size: 20px;
+    top: -5px;
+    right: 0;
+    color: rgb(115,115,115);
+    cursor: pointer;
+}
+.product::before{
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 1px;
+    background-color: rgb(240,240,240);
+    bottom: -21px;
+    left: 0;
+
+}
+.img{
+    padding: 15px;
+    background-color: rgb(254,249,239);
+    margin: 0 15px 0 0;
+    cursor: pointer;
+}
+
+
+
+.img img{
+    width: 40px;
+}
+
+.name-title{
+    font-size: 15px;
+    color: gray;
+    margin: 0px 0px 5px 0;
+    cursor: pointer;
+}
+
+.price{
+    display: flex;
+    align-items: center;
+}
+.quantity{
+    position: relative;
+    padding: 5px 50px;
+    border: 1px solid gray;
+    border-radius: 50px;
+    margin-right: 50px;
+    
+}
+.quantity::before{
+    content: "-";
+    position: absolute;
+    font-size: 35px;
+    top: -9px;
+    left: 11px;
+    color:rgb(115,115,115) ;
+    cursor: pointer;
+}
+.quantity::after{
+    content: "+";
+    position: absolute;
+    font-size: 25px;
+    top: -2px;
+    right: 8px;
+    color:rgb(115,115,115) ;
+    cursor: pointer;
+}
+
+.summary {
+    font-weight: 700;
+    font-size: 18px;
+}
+
+.cart-total__subtotal {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+}
+
+.cart-total__money{
+    color: orangered;
+    font-size: 18px;
+}
+.cart-total__taxes{
+    margin-left: 20px;
+    font-size: 14px;
+    color: gray;
+}
+.view-cart button{
+    text-align: center;
+    margin: 20px;
+    padding: 15px 135px;
+    font-size: 16px;
+    color:gray ;
+    background-color: white;
+    border: 1px solid gray;
+    border-radius: 8px;
+    cursor: pointer;
+}
+.add-to-cart button{
+    padding: 15px 130px;
+    font-size: 16px;
+    margin: 0 20px 20px 20px;
+    color: white ;
+    background-color: blue;
+    border: 1px solid gray;
+    border-radius: 8px;
+    cursor: pointer;
+}
+.shipping{
+    display: flex;
+    padding: 20px ;
+    align-items: center;
+    justify-content: space-between;
+}
+.shipping i{
+    padding: 10px 10px;
+    border: 1px solid blue;
+    border-radius: 75px;
+    font-size: 18px;
+    color: rgb(85, 85, 175);
+}
+.shipping p{
+    font-size: 16px;
+    font-weight: 700;
+    cursor: pointer;
+}
